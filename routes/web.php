@@ -16,7 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+  $tasks = [ '11111', '22222', '33333'];
+
+    return view('about', [
+      'tasks' => $tasks
+  ]);
 });
 
 Route::get('/contact', function () {
