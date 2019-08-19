@@ -27,6 +27,9 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/facilities', 'PagesController@facilities');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
